@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Worth Calculator</title>
+</head>
+<body>
+    <script>
+        //1) Create a variable to get the number of cars
+        var numCars = prompt("How many cars do you have in your garage?");
+    
+        //2) Create a variable to ask the user how much a car is worth
+        var carWorth = prompt("On average, how much is a car worth these days?");
+    
+        //3) Do the same for motorbikes and bikes
+        var numMotorbikes = prompt("How many motorbikes do you have in your garage?");
+        var motorbikeWorth = prompt("On average, how much is a motorbike worth these days?");
+    
+        var numBikes = prompt("How many bikes do you have in your garage?");
+        var bikeWorth = prompt("On average, how much is a bike worth these days?");
+    
+        //4) Create 3 variables to hold the value of cars, motorbikes and bikes
+        var carValue = numCars * carWorth;
+        var motorbikeValue = numMotorbikes * motorbikeWorth;
+        var bikeValue = numBikes * bikeWorth;
+    
+        //5) Check each of the 3 variables content with console logs
+        console.log("The value of your cars is: $" + carValue);
+        console.log("The value of your motorbikes is: $" + motorbikeValue);
+        console.log("The value of your bikes is: $" + bikeValue);
+    
+        //6) Create a totalGarageValue variable that sums the three values together
+        var totalGarageValue = carValue + motorbikeValue + bikeValue;
+    
+        //7) Use an alert() function to display the garage worth in the end with a nice message
+        alert("The total estimated worth of your garage is $" + totalGarageValue + ".");
+    </script>
+    
+    
+</body>
+</html>
